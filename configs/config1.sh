@@ -1,0 +1,1 @@
+--model_id "meta-llama/Llama-3.1-8B" --do_sample --temperature 0.9 --top_k 40 --truncation
