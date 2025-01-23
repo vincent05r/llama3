@@ -25,8 +25,8 @@ if __name__ == '__main__':
     parser.add_argument('--num_return_sequences', type=int, default=1)
     parser.add_argument('--eos_token_id', type=int, default=1, help='1 : tokenizer.eos_token_id  ')
     parser.add_argument('--truncation', action='store_true')
-    parser.add_argument('--max_length', type=int, default=6500, help='In other words, the entire sequence of tokens that ends up in the model’s context.')
-    parser.add_argument('--max_tokens', type=int, default=6500)
+    parser.add_argument('--max_length', type=int, default=2048, help='In other words, the entire sequence of tokens that ends up in the model’s context.')
+    parser.add_argument('--max_tokens', type=int, default=2048)
     parser.add_argument('--sampling_mode', type=int, default=0, help='0: top k,  1: top p')
 
     args = parser.parse_args()

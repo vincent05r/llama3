@@ -12,6 +12,10 @@ def build_prompt_from_conversation(
     system_instruction="You are a helpful assistant.",
     max_tokens=2048
 ):
+    #hard code the system instruction
+    system_instruction = '''You are a helpful computer science assistant,Respond only with your answer. 
+    Do not include [User] or [Assistant] tags in your output. Do not repeat user messages verbatim.'''
+
     """
     Reconstructs the prompt from the conversation list.
     Ensures total tokens <= max_tokens by removing older messages if needed.
